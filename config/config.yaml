@@ -1,0 +1,18 @@
+userSafetyAssessor:
+  numLastConsideringRides: 5
+unsafetyFactors:
+  hardStopFactor:
+    weight: 0.3
+    maxOccurrences: 10
+    hyperparameters:
+      acc_threshold: -2.5
+      wheel_threshold_after_stop: 1
+      num_zero_points_after_stop: 1
+      min_acc_threshold: -100
+  fastPivotFactor:
+    weight: 0.7
+    maxOccurrences: 20
+    hyperparameters:
+      wheel_threshold: 18
+      min_angle_degree: 50
+      tolerance: 0.0001
